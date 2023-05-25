@@ -135,7 +135,6 @@ section#baixada div#r .btn:hover {
 section#noticias {
     margin-top: 60px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 section#noticias > div {
@@ -147,18 +146,16 @@ section#noticias h1 {
 }
 section#noticias div#l {
     border-right: 3px solid rgba(0, 0, 0, 0.5);
-    padding-top: 40px;
-    visibility: hidden;
 }
 section#noticias div#r {
     border-left: 3px solid rgba(0, 0, 0, 0.5);
-    padding-top: 40px;
 }
 section#noticias div#r, section#noticias div#l {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    padding-top: 40px;
 }
 section#noticias div#l img, section#noticias div#r img {
     margin-top: 20px;
@@ -166,11 +163,38 @@ section#noticias div#l img, section#noticias div#r img {
     object-fit: cover;
     object-position: center;
 }
+section#noticias div#l legend {
+    margin-top: 2px;
+    margin-top: 7px;
+}
 section#noticias h1 ~ div { 
-    width: 55%;
+    width: 65%;
 }
 
 section#noticias h1 ~ div p { 
     font-size: 16px;
     margin-top: 10px;
+}
+section#noticias div.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+section#noticias a div.btn {
+    margin-top: 32px;
+    padding: 10px 11px;
+    font-size: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms all;
+    visibility: hidden;
+}
+section#noticias a div.btn:hover {
+    transform: scale(1.03);
 }
