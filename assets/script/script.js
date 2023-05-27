@@ -4,7 +4,7 @@ sr.reveal('.a', {
     distance: '50px',
     scale: 1.2,
     duration: 1000,
-    interval: 200,
+    interval: 100,
     origin: 'top'
 });
 
@@ -27,4 +27,18 @@ sr.reveal('.c', {
     duration: 1000,
     interval: 200,
     origin: 'top'
+});
+sr.reveal('.d', { 
+    distance: '50px',
+    scale: 1.2,
+    duration: 1000,
+    interval: 200,
+    origin: 'left'
+});
+sr.reveal('.e', { 
+    distance: '50px',
+    scale: 1.2,
+    duration: 1000,
+    interval: 200,
+    origin: 'right'
 });
