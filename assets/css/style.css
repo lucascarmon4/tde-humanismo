@@ -95,7 +95,6 @@ section#baixada img {
 }
 section#baixada div#r {
     margin-left: 50px;
-    visibility: hidden;
     margin-top: 30px;
 }
 section#baixada div#r h1 {
@@ -109,8 +108,8 @@ section#baixada div#r div#feature {
     margin-top: 40px;
 }
 section#baixada div#r p {
-    margin-top: 28px;
-    font-size: 20px;
+    margin-top: 23px;
+    font-size: 18px;
 }
 section#baixada div#r .btn {
     margin-top: 32px;
@@ -182,7 +181,7 @@ section#noticias div.btns {
 }
 section#noticias a div.btn {
     margin-top: 32px;
-    padding: 10px 11px;
+    padding: 10px;
     font-size: 16px;
     border: 2px solid black;
     cursor: pointer;
@@ -193,8 +192,9 @@ section#noticias a div.btn {
     align-items: center;
     justify-content: center;
     transition: 200ms all;
-    visibility: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-section#noticias a div.btn:hover {
+section#noticias .btn:hover {
     transform: scale(1.03);
 }

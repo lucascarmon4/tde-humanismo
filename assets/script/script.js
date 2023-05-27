@@ -19,12 +19,12 @@ sr.reveal('.b', {
     scale: 0.9,
     duration: 1000,
     interval: 200,
-    origin: 'left'
+    origin: 'top'
 });
 sr.reveal('.c', { 
-    distance: '20px',
-    scale: 0.9,
+    distance: '50px',
+    scale: 1.2,
     duration: 1000,
     interval: 200,
-    origin: 'right'
+    origin: 'top'
 });
