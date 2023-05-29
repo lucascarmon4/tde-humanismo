@@ -136,6 +136,7 @@ section#noticias {
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 section#noticias > div {
     width: 50%;
@@ -184,24 +185,30 @@ section#noticias .content p {
 section#noticias div.btns {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 50px;
 }
-section#noticias a div.btn {
-    margin-top: 32px;
+section#noticias div.btn {
+    
     padding: 10px;
     font-size: 16px;
     border: 2px solid black;
     cursor: pointer;
     border-radius: 30px;
-    width: 200px;
+    width: 33%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 200ms all;
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
-section#noticias a div.btn:hover {
+section#noticias div.btn:not(:first-child) {
+    margin-left: 10px;
+}
+section#noticias div.btn:hover {
     transform: scale(1.03);
 }
 
@@ -218,7 +225,7 @@ section#apoie > div {
     flex-direction: column;
     align-items: center;
 }
-section#apoie a div.btn {
+section#apoie div.btn {
     margin-top: 32px;
     padding: 10px;
     font-size: 16px;
@@ -262,19 +269,23 @@ header nav.active {
         width: 40%;
         font-size: 16px;
     }
-    section#noticias a div.btn {
+    section#noticias div.btn {
         width: 150px;
         font-size: 14px;
+        
+    }
+    section#noticias div.btns {
+        padding: 0;
     }
 }
 
 @media (max-width: 1000px) {
     @keyframes navLinkFade {
         from {
-            transform: translateX(50px);
+            transform: translateX(0);
         }
         to {
-            transform: translateX(0);
+            transform: translateX(20px);
         }
     }
     header {
@@ -296,6 +307,7 @@ header nav.active {
         position: fixed;
         z-index: 2;
         border-left: 1px solid rgba(0, 0, 0, 0.363);
+        
     }
     header .header-r ul {
         flex-direction: column;
@@ -303,8 +315,9 @@ header nav.active {
         justify-content: space-around;
         align-items: center;
         padding-right: 20px;
+        transform: translateX(-20px);
     } 
-    header .header-r ul a:nth-child(-n + 4)::after {
+    header .header-r ul a::after {
         display: none;
     }
     .mobile-menu {
@@ -357,7 +370,7 @@ header nav.active {
         margin: 0 auto;
     }
     section#baixada div#r .btn {
-        width: 100%;
+        width: 80%;
     }
     section#noticias {
         flex-direction: column;
@@ -372,9 +385,11 @@ header nav.active {
         justify-content: start;
         height: auto;
     }
-    section#noticias a div.btn {
-        width: 120px;
+
+    section#noticias div.btn {
+        width: 33%;
         font-size: 13px;
+        
     }
     section#apoie {
         margin-top: 50px;
@@ -391,4 +406,32 @@ header nav.active {
         width: 85%;
         margin-top: 30px;
     }
+}
+
+@media (max-width: 600px) {
+    section#noticias h1 {
+        font-size: 23px;
+        height: auto;
+    }
+    section#noticias .content {
+        width: 100%;
+    }
+    section#noticias div.btns {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    section#noticias div.btn {
+        width: 70%;
+    }
+    section#noticias div.btn:not(:first-child) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    section#apoie div.btn {
+        width: 70%;
+    }
+    
 }
