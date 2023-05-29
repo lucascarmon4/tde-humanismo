@@ -127,6 +127,7 @@ section#baixada div#r .btn {
     justify-content: center;
     margin-bottom: 50px;
     transition: 200ms all;
+    text-align: center;
 }
 section#baixada div#r .btn:hover {
     transform: scale(1.03);
@@ -203,6 +204,7 @@ section#noticias div.btn {
     align-items: center;
     justify-content: center;
     transition: 200ms all;
+    text-align: center;
     
 }
 section#noticias div.btn:not(:first-child) {
@@ -238,6 +240,7 @@ section#apoie div.btn {
     align-items: center;
     justify-content: center;
     transition: 300ms all;
+    text-align: center;
 }
 section#apoie .btn:hover {
     transform: scale(1.05);
