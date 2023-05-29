@@ -292,6 +292,9 @@ header nav.active {
         height: 100px;
         justify-content: left;
     }
+    header .header-l h1{
+        font-size: 25px;
+    }
     header .header-l img {
         width: 80px;
         height: 80px;
@@ -368,7 +371,7 @@ header nav.active {
     }
     section#baixada div#r h1 {
         text-align: center;
-        font-size: 32px;
+        font-size: 25px;
     }
     section#baixada div#r div#feature {
         width: 60%;
